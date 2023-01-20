@@ -22,7 +22,7 @@ what you showuld learn from this project:
 
 4. [Hello,puts](https://github.com/AniekanSamson/alx-low_level_programming/blob/main/0x00-hello_world/4-puts.c)
 - Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-5. [Hello, printf](https://github.com/AniekanSamson/alx-low_level_programming/blob/main/0x00-hello_world/5-printf.c)\
+5. [Hello, printf](https://github.com/AniekanSamson/alx-low_level_programming/blob/main/0x00-hello_world/5-printf.c)
 - Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 6. [Size is not grandeur, and territory does not make a nation](https://github.com/AniekanSamson/alx-low_level_programming/blob/main/0x00-hello_world/6-size.c)
 - Write a C program that prints the size of various types on the computer it is compiled and run on.
