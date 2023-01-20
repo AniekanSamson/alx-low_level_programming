@@ -1,4 +1,4 @@
-#**Alx-Software-Engineering_low_level_programming**
+# Alx-Software-Engineering_low_level_programming**
 ## Each folder in this repository illustrates an essential concepts of low level programming, specific to the C programming language. The file names reference the concepts (i.e. functions, variables, pointers  etc) Inside these folders are files containing bash scripts and functions around that particular concept. Some functions are re-creations of functions found in the C standard libraries (i.e. _strcpy, _strlen, etc).
 * 0x00. C - Hello, World
 * 0x01. C - Variables, if, else, while
@@ -17,7 +17,7 @@
 * 0x0E. C - Structures, typedef
 * 0x0F. C - Function pointers
 * 0x10. C - Variadic functions
-###* 0x011. C Printf Project
+# Printf project
 * 0x12. C - Singly linked lists
 * 0x13. C - More singly linked lists
 * 0x14. C - Bit manipulation
