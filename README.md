@@ -1,2 +1,2 @@
-# alx-low_level_programming
+**#Alx-Software-Engineering_low_level_programming**
 ## Each folder in this repository illustrates an essential concepts of low level programming, specific to the C programming language. The file names reference the concepts (i.e. functions, variables, pointers  etc) Inside these folders are files containing bash scripts and functions around that particular concept. Some functions are re-creations of functions found in the C standard libraries (i.e. _strcpy, _strlen, etc).
