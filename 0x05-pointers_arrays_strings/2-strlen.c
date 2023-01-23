@@ -3,6 +3,7 @@
 /*
  *_strlen - funct to return length of string
  * @s : string value whose length we have to find
+ * Return : length
  *
  */
 
@@ -15,5 +16,5 @@ int _strlen(char *s)
 		count++;
 		s++;
 	}
-	return count;
+	return (count);
 }
