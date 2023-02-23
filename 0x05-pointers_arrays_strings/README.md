@@ -2,7 +2,7 @@
 
 ### Description
 
-what you should ;earn fro this project
+what you should learn from this project
 
 * What are pointers and how to use them
 * What are arrays and how to use them
