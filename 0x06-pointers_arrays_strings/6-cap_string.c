@@ -11,7 +11,7 @@ char *cap_string(char *z)
 {
 	int i = 0;
 	int j;
-	char badBoys[] = " \n\t,;.!?\"(){}";
+	char param[] = " \n\t,;.!?\"(){}";
 
 
 	if (z[0] >= 'a' && z[0] <= 'z')
@@ -21,7 +21,7 @@ char *cap_string(char *z)
 	{
 		for (j = 0; j < 14; j++)
 		{
-			if (z[i] == badBoys[j])
+			if (z[i] == param[j])
 			{
 				if (z[i + 1] >= 'a' && z[i + 1] <= 'z')
 					z[i + 1] -= 32;
