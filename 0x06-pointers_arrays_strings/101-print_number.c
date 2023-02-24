@@ -1,22 +1,35 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * print_number - Prints an integer
- *
- * @n: the integer to print
- *
- * Return: nothing
+ * print_number - print an integer, without using long, arrays, or pointers
+ * @n: number to be printed
  */
 
 void print_number(int n)
 {
-	if (n < 0)
+	unsigned int tens, digit, positive = n;
+	double n_dig = 1;
+
+	if (n == 0)
+		_putchar('0');
+	else
 	{
-		_putchar('-');
-		n *= -1;
+		if (n < 0)
+		{
+			positive = n * -1;
+			_putchar('-');
+		}
+
+		while (n_dig <= positive)
+			n_dig *= 10;
+		tens = n_dig / 10;
+
+		while (tens >= 1)
+		{
+			digit = positive / tens;
+			_putchar(digit + '0');
+			positive = (positive - (tens * digit));
+			tens /= 10;
+		}
 	}
-
-	if (n / 10)
-		print_number(n / 10);
-
-	_putchar((n % 10) + '0');
 }
