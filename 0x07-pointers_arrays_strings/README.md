@@ -1,17 +1,17 @@
-0x0g. C - Even more pointers, arrays and strings
-Description
-What you should learn from this project:
+*0x07. C - Even more pointers, arrays and strings
+*Description
+*What you should learn from this project:
 
 What are pointers to pointers and how to use them
 What are multidimensional arrays and how to use them
 What are the most common C standard library functions to manipulate strings
 
 
-0. memset
+0.memset
 Write a function that fills memory with a constant byte.
-1. memcpy
+1.memcpy
 Write a function that copies memory area.
-2. strchr
+2.strchr
 Write a function that locates a character in a string.
 3. strspn
 Write a function that gets the length of a prefix substring.
