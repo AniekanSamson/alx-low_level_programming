@@ -1,33 +1,33 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_binary - Entry Point
- * @n: dec input
- * Return: 0
+ * print_binary - converts unsigned int to binary
+ * @n: unsigned int
+ * Return: binary
  */
 void print_binary(unsigned long int n)
 {
-	int i = 0, count, k, temp;
 
-	if (n == 0)
+	unsigned long int n_copy = n, mask = 1;
+	int len = 0;
+
+	while (n_copy > 0)
 	{
-		printf("0");
-		return;
+		len++;
+		n_copy >>= 1;
 	}
+	len -= 1;
 
-	temp = n;
+	if (len > 0) /* create mask based on length of num */
+		mask = mask << len;
 
-	while (temp != 0)
+	while (mask > 0) /* match each rightmost bit to see if 1 or 0 */
 	{
-		i++;
-		temp = temp >> 1;
-	}
-
-	for (count = i - 1; count >= 0; count--)
-	{
-		k = n >> count;
-		if (k & 1)
-			printf("1");
+		if (n & mask)
+			_putchar('1');
 		else
-			printf("0");
+			_putchar('0');
+
+		mask >>= 1;
 	}
 }
