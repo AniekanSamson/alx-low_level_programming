@@ -1,19 +1,22 @@
 #include "lists.h"
+
 /**
- * free_listint2 - Entry Point
- * @head: head
- * Return: 0
+ * free_listint2 - frees a linked list, and sets head to NULL
+ * @head: linked list
  */
+
 void free_listint2(listint_t **head)
 {
-	if (*head == NULL)
+	listint_t *ptr;
+
+	if (head == NULL) /*this will account for no ptr */
 		return;
 
-	while (*head)
+	while (*head != NULL) /* will have ptr keep track of head node and free */
 	{
-		free(*head);
-		*head = (*head)->next;
+		ptr = *head;
+		*head = ptr->next; /* this will move to next node while ptr frees prior */
+		free(ptr);
 	}
 
-	*head = NULL;
 }
